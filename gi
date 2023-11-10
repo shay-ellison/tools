@@ -1,3 +1,4 @@
+#!/bin/sh
 COMMAND="$1"
 
 # Refile, which is basically hard reset of a single file
@@ -30,6 +31,7 @@ elif [[ "$COMMAND" == "" ]]; then
   echo "Options: -h for help"
   echo
   git status
+  git branch
 
 # Help
 elif [[ "$COMMAND" == "-h" ]]; then
